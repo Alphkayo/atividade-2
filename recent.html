@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>KF Filmes - Últimos Filmes</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="icon" href="./images/favicon.svg" sizes="any" type="image/svg+xml">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600">
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<nav>
+			<header>
+				<a href="./index.html">
+					<div class="logo" role="img" alt="Logotipo da KF Filmes">
+						<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+							<text dominant-baseline="middle" text-anchor="middle" fill="currentColor" style="font-family: Arial, sans-serif; font-size: 460px; letter-spacing: -88px" x="50%" y="50%">KF</text>
+						</svg>
+					</div>
+				</a>
+			</header>
+
+			<div class="menu">
+				<ul>
+					<li><a class="active" href="./recent.html">Recentes</a></li>
+					<li><a href="./popular.html">Populares</a></li>
+					<li><a href="./about.html">Sobre</a></li>
+					<li><a href="./contact.html">Contato</a></li>
+				</ul>
+			</div>
+
+			<div id="mobile-menu" aria-haspopup="menu">
+				<input id="mobile-checkbox" type="checkbox" aria-hidden="true">
+
+				<label for="mobile-checkbox">
+					<span class="menu-icon" aria-label="Menu de navegação"></span>
+				</label>
+
+				<div class="menu" aria-hidden="true">
+					<ul>
+						<li><a class="active" href="./recent.html">Recentes</a></li>
+						<li><a href="./popular.html">Populares</a></li>
+						<li><a href="./about.html">Sobre</a></li>
+						<li><a href="./contact.html">Contato</a></li>
+					</ul>
+				</div>
+
+				<script>
+					(() => {
+						const mobileMenu = document.getElementById("mobile-menu")
+						const checkbox = mobileMenu.querySelector("input")
+						const menu = mobileMenu.querySelector(".menu")
+
+						checkbox.addEventListener("change", () => {
+							menu.ariaHidden = !checkbox.checked
+						})
+					})()
+				</script>
+			</div>
+		</nav>
+
+		<main>
+			<section>
+				<header>
+					<h1>Últimos Filmes</h1>
+				</header>
+
+				<ul class="movies">
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/o-monstro-que-vive-em-mim-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/o-monstro-que-vive-em-mim.jpg">
+							</div>
+							<div class="content">
+								<span class="title">O Monstro que vive em Mim</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/alice-uma-acompanhante-parisiense-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/alice-uma-acompanhante-parisiense.jpg">
+							</div>
+							<div class="content">
+								<span class="title">Alice: Uma Acompanhante Parisiense</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/resistencia-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/resistencia.jpg">
+							</div>
+							<div class="content">
+								<span class="title">Resistência</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/som-da-liberdade-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/som-da-liberdade.jpg">
+							</div>
+							<div class="content">
+								<span class="title">Som da Liberdade</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/a-freira-2-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/a-freira-2.jpg">
+							</div>
+							<div class="content">
+								<span class="title">A Freira 2</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/after-para-sempre-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/after-para-sempre.jpg">
+							</div>
+							<div class="content">
+								<span class="title">After: Para Sempre</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/nosso-amigo-extraordinario-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/nosso-amigo-extraordinário.jpg">
+							</div>
+							<div class="content">
+								<span class="title">Nosso Amigo Extraordinário</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/o-protetor-capitulo-final-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/o-protetor-capitulo-final.jpg">
+							</div>
+							<div class="content">
+								<span class="title">O Protetor: Capitulo Final</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/sequestro-noturno-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/sequestro-noturno.jpg">
+							</div>
+							<div class="content">
+								<span class="title">Sequestro Noturno</span>
+							</div>
+						</a>
+					</li>
+					<li class="movie">
+						<a href="https://pobreflix.fm/filmes/projeto-caca-ao-lobo-hd-6h44/" target="_blank" rel="noindex noopener noreferrer">
+							<div class="header">
+								<img src="./images/movies/last/projeto-caça-ao-lobo.jpg">
+							</div>
+							<div class="content">
+								<span class="title">Projeto Caça ao Lobo</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>

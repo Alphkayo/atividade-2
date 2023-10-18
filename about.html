@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>KF Filmes - Sobre nós</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="icon" href="./images/favicon.svg" sizes="any" type="image/svg+xml">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=fallback">
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<nav>
+			<header>
+				<a href="./index.html">
+					<div class="logo" role="img" alt="Logotipo da KF Filmes">
+						<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+							<text dominant-baseline="middle" text-anchor="middle" fill="currentColor" style="font-family: Arial, sans-serif; font-size: 460px; letter-spacing: -88px" x="50%" y="50%">KF</text>
+						</svg>
+					</div>
+				</a>
+			</header>
+
+			<div class="menu">
+				<ul>
+					<li><a href="./popular.html">Populares</a></li>
+					<li><a href="./recent.html">Recentes</a></li>
+					<li><a class="active" href="./about.html">Sobre</a></li>
+					<li><a href="./contact.html">Contato</a></li>
+				</ul>
+			</div>
+
+			<div id="mobile-menu" aria-haspopup="menu">
+				<input id="mobile-checkbox" type="checkbox" aria-hidden="true">
+
+				<label for="mobile-checkbox">
+					<span class="menu-icon" aria-label="Menu de navegação"></span>
+				</label>
+
+				<div class="menu" aria-hidden="true">
+					<ul>
+						<li><a href="./popular.html">Populares</a></li>
+						<li><a href="./recent.html">Recentes</a></li>
+						<li><a class="active" href="./about.html">Sobre</a></li>
+						<li><a href="./contact.html">Contato</a></li>
+					</ul>
+				</div>
+
+				<script>
+					(() => {
+						const mobileMenu = document.getElementById("mobile-menu")
+						const checkbox = mobileMenu.querySelector("input")
+						const menu = mobileMenu.querySelector(".menu")
+
+						checkbox.addEventListener("change", () => {
+							menu.ariaHidden = !checkbox.checked
+						})
+					})()
+				</script>
+			</div>
+		</nav>
+
+		<main>
+			<section id="about">
+				<header>
+					<h1>Sobre nós</h1>
+				</header>
+
+				<article>
+					<header>
+						<h2>Introdução</h2>
+					</header>
+
+					<p>Bem-vindo à KF Filmes, a sua fonte confiável para acessar uma ampla variedade de filmes de forma conveniente e acessível. Fundada por Kayo Felipe, a KF Filmes é dedicada a proporcionar uma experiência de entretenimento cinematográfico única aos nossos usuários.</p>
+				</article>
+
+				<article>
+					<header>
+						<h2>O Que Fazemos</h2>
+					</header>
+
+					<p>Na KF Filmes, nossa missão é facilitar o acesso a uma vasta biblioteca de filmes para o seu entretenimento. Nós indexamos filmes de vários sites que os hospedam nas nossas páginas, permitindo que você encontre e assista a filmes de forma simples e prática. Nosso catálogo abrange diversos gêneros, desde clássicos atemporais até os mais recentes lançamentos.</p>
+				</article>
+
+				<article>
+					<header>
+						<h2>Nosso Compromisso</h2>
+					</header>
+
+					<p>Na KF Filmes, estamos comprometidos em oferecer uma plataforma segura e confiável para assistir filmes online. Valorizamos a sua privacidade e garantimos que todos os filmes em nosso site estão devidamente licenciados ou autorizados para exibição.</p>
+				</article>
+
+				<article>
+					<header>
+						<h2>Entre em Contato</h2>
+					</header>
+
+					<p>Estamos aqui para fornecer o melhor entretenimento cinematográfico e garantir que você tenha uma experiência agradável em nosso site. Se você tiver alguma pergunta, sugestão ou precisar de suporte, não hesite em entrar em contato conosco. Estamos disponíveis para atendê-lo.</p>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>
